@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>DID</title>
+
+			<link rel="stylesheet"  href="1e.css">
+				<style>
+					#menus {
+						background:#6C12D7;
+						}
+
+					#menus ul{
+						list-style: none;
+						}
+					#menus ul li{
+						display: inline-block;
+						}
+					#menus ul li a{
+						color: white;
+						display: block;
+						padding: 15px 100px;
+						text-decoration: none;
+						}
+					#menus ul li a:hover{
+						background:#0093FF;
+						}	
+				</style>
+	</head>
+
+	<body>
+		<h1>Registro de compra</h1>
+			<form action="venta.php" method="post" class="registrar" onsubmit="return validar();">
+				<h2 class="tt">BOLETOS</h2>
+				<div class="contenedor-inputs">
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-50" required>
+					<input type="text" id="apellido" name="apellido" placeholder="Apellidos" class="input-50" required>
+					<input type="email" id="correo" name="correo" placeholder="E-mail" class="input-100" required>
+					<input type="int" id="edad" name="edad" placeholder="Edad" class="input-50" required> 
+					<input type="int" id="cantidad" name="cantidad" placeholder="Cantidad" class="input-50" required>		
+					<input type="float" id="fecha" name="fecha" placeholder="Fecha" class="input-100" required>
+					<input type="submit"  value="Siguiente" class="btn-enviar">
+					<button class="boton1"><a href="sig.html">Siguiente</a></button>
+				</div>
+			</form>
+	</body>
